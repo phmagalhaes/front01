@@ -1,0 +1,188 @@
+/* main */
+main{
+    padding: 10px 20px;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* saldo */
+main .saldo{
+    width: 48%;
+    border: 5px solid var(--verde);
+    background-color: #ececec;
+    border-radius: 30px;
+    padding: 10px;
+    height: 100px;
+}
+.saldo .title, .transacoes .title, main .gastos .title, main .meta .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--verdeEscuro);
+}
+.saldo .dados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.saldo .dados p{
+    color: #262626;
+    font-weight: 400;
+    font-size: 16px;
+}
+.saldo .dados p:first-child{
+    font-weight: 600;
+}
+
+
+/* logo */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid var(--verde);
+    background-color: #ececec;
+    border-radius: 30px;
+
+    width: 48%;
+    height: 100px;
+}
+.logo img{
+    width: 80%;
+}
+
+/* transacoes */
+main .transacoes, main .gastos, main .meta{
+    width: 100%;
+    border: 5px solid var(--verde);
+    background-color: #ececec;
+    border-radius: 30px;
+    padding: 10px;
+    height: 150px;
+}
+.transacoes .dados{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.transacoes .dados div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 18px;
+}
+.transacoes .dados div p{
+    color: #262626;
+    font-size: 16px;
+}
+.transacoes .dados div p:first-child{
+    font-weight: bold;
+}
+.transacoes .dados div .categorias{
+    font-size: 12px;
+    font-weight: 300;
+    color: #818181;
+    margin-top: -5px;
+}
+
+
+/* gastos */
+.grafico-pizza {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #5ABD77 0% 35%,
+        #377449 35% 55%,
+        #162e1d 55% 65%,
+        #161c2e 65% 75%,
+        #3e5083 75% 85%,
+        #5d79c4 85% 94%,
+        #5dafc4 94% 100%
+
+    );
+}
+.gastos .dados{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gastos .dados .legenda{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px 0;
+}
+.gastos .dados .legenda .item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.gastos .dados .legenda .item .cor{
+    width: 10px;
+    height: 10px;
+}
+.item .cor1{
+    background-color: #5ABD77;
+}
+.item .cor2{
+    background-color: #377449;
+}
+.item .cor3{
+    background-color: #162e1d;
+}
+.item .cor4{
+    background-color: #161c2e;
+}
+.item .cor5{
+    background-color: #3e5083;
+}
+.item .cor6{
+    background-color: #5d79c4;
+}
+.item .cor7{
+    background-color: #5dafc4;
+}
+.gastos .dados .legenda .item p{
+    font-size: 10px;
+}
+
+
+/* meta */
+.meta .dados{
+    margin-top: 10px;
+}
+.meta .dados .metaText{
+    font-weight: 600;
+}
+.meta .dados .economia{
+    font-weight: 300;
+    font-size: 13px;
+}
+.meta .dados .subtitle{
+    font-weight: 600;
+    font-size: 10px;
+}
+.grafico-retangular {
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    background: linear-gradient(
+        to right,
+        #5ABD77 0% 17%,
+        #162e1d 17% 100%
+    );
+}
